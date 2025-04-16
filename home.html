@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - GadgetCatalog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/about_us.css"/>
-  <link rel="stylesheet" href="css/menu_bar.css"/>
-  <link rel="stylesheet" href="css/carousel.css"/>
-  <link rel="stylesheet" href="css/styles.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/home_images/favicon-16x16.png" type="image/png" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/test_css/carousel.css">
+    <title>Home Page - GadgetCatalog</title>
 </head>
 <body>
   <header>
@@ -112,54 +111,107 @@
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </nav> 
   </header>
+  <div class="slideshow-container">
+    <div class="slide-track">
+      <img src="images/home_images/landsc_gpro.jpg" alt="Logitech G PRO X">
+      <img src="images/home_images/landsc_alienware.webp" alt="Alienware Monitor">
+      <img src="images/home_images/landsc_jbl.jpg" alt="JBL Flip 6">
+      <img src="images/home_images/landsc_blue.webp" alt="Blue Yeti">
+      <img src="images/home_images/landsc_k8pro.webp" alt="Keychron K8 Pro">
+    </div>
+  </div>
+  
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
 
-  <main>
-    <section class="hero">
-      <h1>Our Mission is Innovation</h1>
-      <p>At GadgetCatalog, we believe technology should inspire and empower. We're driven to curate only the finest tools that fuel creativity, performance, and progress.</p>
-    </section>
+  <section class="product-section">
+    <h2 class="section-title">Featuring</h2>
+  <div class="product-card-container">
+    <div class="product-card">
+      <img src="images/home_images/benq_monitor.png" alt="Product 1">
+      <h2>BenQ Zowie</h2>
+      <span class="price">From $649.99</span>
+      <button>Buy</button>
+    </div>
+  
+    <div class="product-card">
+      <img src="images/home_images/logitech_mouse.png" alt="Product 2">
+      <h2>Logitech G PRO X</h2>
+      <span class="price"> From $149.99</span>
+      <button>Buy</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="images/home_images/hyperx_cloud2.png" alt="Product 3">
+      <h2>HyperX Cloud II</h2>
+      <span class="price">From $79.99</span>
+      <button>Buy</button>
+    </div>
 
-    <section class="carousel">
-      <div class="carousel-track">
-        <div class="carousel-slide"><img src="images/about_images/carousel1.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel2.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel3.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel4.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel5.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel1.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel2.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel3.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel4.png" alt=""></div>
-        <div class="carousel-slide"><img src="images/about_images/carousel5.png" alt=""></div>
-      </div>
-    </section>
+    <div class="product-card">
+      <img src="images/home_images/blue_yeti.png" alt="Product 4">
+      <h2>Blue Yeti</h2>
+      <span class="price">From $99.99</span>
+      <button>Buy</button>
+    </div>
 
-    <section class="section">
-      <h2>Who We Are</h2>
-      <p>We're a team of tech-savvy creators, developers, and designers with a passion for bringing top-quality computer gadgets to users around the globe. From sleek laptops to powerful accessories, we handpick every item with precision and care.</p>
-    </section>
-
-    <section class="section">
-      <h2>What Drives Us</h2>
-      <p>Clean design. Cutting-edge performance. Seamless user experience. These aren't just buzzwords — they're the core of what we stand for. Just like our inspiration, we believe less is more, and every product should speak for itself.</p>
-    </section>
-
-    <section class="section">
-      <h2>Who We Are</h2>
-      <p>We're a team of tech-savvy creators, developers, and designers with a passion for bringing top-quality computer gadgets to users around the globe. From sleek laptops to powerful accessories, we handpick every item with precision and care.</p>
-    </section>
-
-    <section class="section">
-      <h2>What Drives Us</h2>
-      <p>Clean design. Cutting-edge performance. Seamless user experience. These aren't just buzzwords — they're the core of what we stand for. Just like our inspiration, we believe less is more, and every product should speak for itself.</p>
-    </section>
-
-  </main>
+    <div class="product-card">
+      <img src="images/home_images/K8Pro.png" alt="Product 5">
+      <h2>Keychron K8 Pro</h2>
+      <span class="price">From $67.99</span>
+      <button>Buy</button>
+    </div>
+  </div>
+  </section>
   <footer>
     &copy; 2025 GadgetCatalog. All rights reserved.
   </footer>
-</body>
+  <script>
+    const track = document.querySelector('.slide-track');
+    const slides = document.querySelectorAll('.slide-track img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+  
+    let index = 0;
+    const totalSlides = slides.length;
+  
+    function showSlide(i) {
+  if (i >= totalSlides) index = 0;
+  else if (i < 0) index = totalSlides - 1;
+  else index = i;
 
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+  
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      showSlide(index);
+    }
+  
+    function prevSlide() {
+      index = (index - 1 + totalSlides) % totalSlides;
+      showSlide(index);
+    }
+  
+    let autoSlide = setInterval(nextSlide, 3000);
+  
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetTimer();
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetTimer();
+    });
+  
+    function resetTimer() {
+      clearInterval(autoSlide);
+      autoSlide = setInterval(nextSlide, 3000);
+    }
+  </script>
+  
+</body>
 </html>
