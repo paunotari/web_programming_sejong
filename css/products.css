@@ -1,17 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 375px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
     color: #333;
     line-height: 1.6;
   }
-
-  header {
-    padding: 2rem;
-    text-align: center;
-  }
-
   .hero {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +47,6 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1.5rem 2rem;
-    background-color: #f8f8f8;
   }
 
   .spec-item {
