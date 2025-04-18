@@ -53,6 +53,35 @@ body {
     font-weight: bold;
     color: #444;
   }
+  .highlight-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .highlight-image, .highlight-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+  }
+
+  .highlight-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-text p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .highlight-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
   .features {
     display: flex;
