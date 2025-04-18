@@ -4,7 +4,7 @@ body {
 
 .slideshow-container {
   position: relative;
-  width: 2000px;
+  max-width: 2000px;
   height: 800px;
   margin: 0 auto;
   overflow: hidden;
