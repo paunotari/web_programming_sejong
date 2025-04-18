@@ -4,8 +4,8 @@ body {
 
 .slideshow-container {
   position: relative;
-  max-width: 1500px;
-  height: 500px;
+  width: 2000px;
+  height: 800px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 20px;
@@ -68,10 +68,9 @@ cursor: pointer;
   }
   
 .section-title {
-    margin-left: 20px;
+    margin: 2rem;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 0px;
     color: #1d1d1f;
     
   }
@@ -142,7 +141,7 @@ cursor: pointer;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 10px 0px;
+    padding: 20px 0px;
   }
   
   .product-card:hover {
