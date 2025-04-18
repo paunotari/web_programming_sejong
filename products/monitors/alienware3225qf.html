@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GadgetCatalog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
   <link rel="icon" href="images/home_images/favicon-16x16.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/css/about_us.css"/>
   <link rel="stylesheet" href="/css/menu_bar.css"/>
   <link rel="stylesheet" href="/css/carousel.css"/>
-  <link rel="stylesheet" href="/css/products.css"/>
+  <link rel="stylesheet" href="/css/products.css">
 </head>
-
 <body>
   <header>
     <nav>
@@ -120,97 +118,49 @@
     </nav>
   </header>
 
-
-  <main class="product-page">
-    <section class="hero">
+  <section class="hero">
+    <div class="hero-text">
       <h1>Alienware 32 4K QD-OLED Gaming Monitor</h1>
-      <div class="slideshow-container">
-        <div class="slide-track">
-          <img src="/images/product_images/monitor_images/Alienware 32 4K/pre.webp" alt="Alienware Monitor">
-          <img src="/images/product_images/monitor_images/Alienware 32 4K/usb.webp" alt="Alienware Monitor">
-          <img src="/images/product_images/monitor_images/Alienware 32 4K/ultra hd.webp" alt="Alienware Monitor">
-          <img src="/images/product_images/monitor_images/Alienware 32 4K/vies.webp" alt="Alienware Monitor">
-          <img src="/images/product_images/monitor_images/Alienware 32 4K/vision.webp" alt="Alienware Monitor">
-        </div>
-      
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-      </div>
-      <p>An unrivaled viewing experience in every scene with our 32-inch QD-OLED monitor, featuring a 4K resolution, curved panel, Dolby Vision and 240Hz refresh rate.</p>
-    </section>
-  
-    <section class="features">
-      <div class="feature-tile dark">
-        <h2>Design</h2>
-        <p>Transparent design that blends beautifully with your setup.</p>
-      </div>
-      <div class="feature-tile blue">
-        <h2>Speed</h2>
-        <p>Supports up to 240W charging and 10 Gbps data transfer.</p>
-      </div>
-      <div class="feature-tile brown">
-        <h2>Build Quality</h2>
-        <p>Durable braided nylon, built to last through everyday wear and tear.</p>
-      </div>
-      <div class="feature-tile light">
-        <h2>Compatibility</h2>
-        <p>USB-C to USB-C: works with phones, laptops, tablets, and more.</p>
-      </div>
-    </section>
-  
-    <section class="cta">
-      <h2>Upgrade your connection.</h2>
-      <p>Available now from top-tier brands through GadgetCatalog.</p>
-      <a href="/buy.html" class="buy-button">Buy Now</a>
-    </section>
-    <footer>
-      &copy; 2025 GadgetCatalog. All rights reserved.
-    </footer>
-  </main>
+      <p>Experience vivid color, rapid refresh rates, and next-gen clarity with our latest high-performance display, designed for immersive gameplay and creative excellence.</p>
+    </div>
+    <div class="hero-image">
+      <img src="/images/product_images/monitor_images/Alienware 32 4K/vision.webp" alt="Product Image">
+    </div>
+  </section>
 
+  <section class="specs-line">
+    <div class="spec-item">4K Resolution</div>
+    <div class="spec-item">240Hz Refresh Rate</div>
+    <div class="spec-item">0.03ms Response Time</div>
+    <div class="spec-item">HDR10 Certified</div>
+  </section>
+
+  <section class="features">
+    <div class="feature-tile">
+      <h3>Design</h3>
+      <p>Minimalist modern look with RGB accents and ultra-thin bezels.</p>
+    </div>
+    <div class="feature-tile">
+      <h3>Speed</h3>
+      <p>One of the fastest OLED panels with lightning-fast refresh for esports.</p>
+    </div>
+    <div class="feature-tile">
+      <h3>Build Quality</h3>
+      <p>Crafted from premium materials, built to last under pressure.</p>
+    </div>
+    <div class="feature-tile">
+      <h3>Compatibility</h3>
+      <p>Works seamlessly with PS5, Xbox, PC, and Mac setups.</p>
+    </div>
+  </section>
+
+  <section class="highlight-section">
+    <h2>Upgrade your connection.</h2>
+    <p>Enjoy industry-leading performance with our next-gen hardware. Whether gaming, creating, or streaming — this monitor brings your visuals to life like never before.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Company Name. All rights reserved.
+  </footer>
 </body>
-<script>
-  const track = document.querySelector('.slide-track');
-  const slides = document.querySelectorAll('.slide-track img');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-
-  let index = 0;
-  const totalSlides = slides.length;
-
-  function showSlide(i) {
-if (i >= totalSlides) index = 0;
-else if (i < 0) index = totalSlides - 1;
-else index = i;
-
-track.style.transform = `translateX(-${index * 100}%)`;
-}
-
-  function nextSlide() {
-    index = (index + 1) % totalSlides;
-    showSlide(index);
-  }
-
-  function prevSlide() {
-    index = (index - 1 + totalSlides) % totalSlides;
-    showSlide(index);
-  }
-
-  let autoSlide = setInterval(nextSlide, 3000);
-
-  nextBtn.addEventListener('click', () => {
-    nextSlide();
-    resetTimer();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    prevSlide();
-    resetTimer();
-  });
-
-  function resetTimer() {
-    clearInterval(autoSlide);
-    autoSlide = setInterval(nextSlide, 3000);
-  }
-</script>
 </html>
