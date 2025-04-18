@@ -4,8 +4,9 @@ body {
 
 .slideshow-container {
   position: relative;
+  aspect-ratio: 16 / 9;
   max-width: 1400px;
-  height: 800px;
+  max-height: 800px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 20px;
