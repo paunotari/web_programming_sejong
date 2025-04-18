@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/css/about_us.css"/>
   <link rel="stylesheet" href="/css/menu_bar.css"/>
   <link rel="stylesheet" href="/css/carousel.css"/>
-  <link rel="stylesheet" href="/css/product.css"/>
+  <link rel="stylesheet" href="/css/products.css"/>
 </head>
 
 <body>
@@ -124,9 +124,21 @@
   <main class="product-page">
     <section class="hero">
       <h1>Alienware 32 4K QD-OLED Gaming Monitor</h1>
+      <div class="slideshow-container">
+        <div class="slide-track">
+          <img src="/images/product_images/monitor_images/Alienware 32 4K/pre.webp" alt="Alienware Monitor">
+          <img src="/images/product_images/monitor_images/Alienware 32 4K/usb.webp" alt="Alienware Monitor">
+          <img src="/images/product_images/monitor_images/Alienware 32 4K/ultra hd.webp" alt="Alienware Monitor">
+          <img src="/images/product_images/monitor_images/Alienware 32 4K/vies.webp" alt="Alienware Monitor">
+          <img src="/images/product_images/monitor_images/Alienware 32 4K/vision.webp" alt="Alienware Monitor">
+        </div>
+      
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      </div>
       <p>An unrivaled viewing experience in every scene with our 32-inch QD-OLED monitor, featuring a 4K resolution, curved panel, Dolby Vision and 240Hz refresh rate.</p>
     </section>
-
+  
     <section class="features">
       <div class="feature-tile dark">
         <h2>Design</h2>
@@ -145,13 +157,60 @@
         <p>USB-C to USB-C: works with phones, laptops, tablets, and more.</p>
       </div>
     </section>
-
+  
     <section class="cta">
       <h2>Upgrade your connection.</h2>
       <p>Available now from top-tier brands through GadgetCatalog.</p>
       <a href="/buy.html" class="buy-button">Buy Now</a>
     </section>
+    <footer>
+      &copy; 2025 GadgetCatalog. All rights reserved.
+    </footer>
   </main>
 
 </body>
+<script>
+  const track = document.querySelector('.slide-track');
+  const slides = document.querySelectorAll('.slide-track img');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let index = 0;
+  const totalSlides = slides.length;
+
+  function showSlide(i) {
+if (i >= totalSlides) index = 0;
+else if (i < 0) index = totalSlides - 1;
+else index = i;
+
+track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide(index);
+  }
+
+  let autoSlide = setInterval(nextSlide, 3000);
+
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetTimer();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetTimer();
+  });
+
+  function resetTimer() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(nextSlide, 3000);
+  }
+</script>
 </html>
