@@ -1,8 +1,6 @@
-
-
 header {
   background-color: #fff;
-  
+
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -31,7 +29,6 @@ nav {
   gap: 30px;
   margin: 0;
   padding: 0;
-  
 }
 
 .menu > li {
@@ -46,15 +43,11 @@ nav {
   padding: 10px;
   display: block;
   transition: color 0.2s ease;
-  
 }
 
 .menu a:hover {
   color: #007aff;
 }
-
-
-
 
 /* Dropdown Menu */
 .dropdown-content {
@@ -63,7 +56,7 @@ nav {
   top: 110%;
   left: 70%;
   transform: translateX(-50%);
-  width: 102vw; 
+  width: 102vw;
 
   max-height: 60vh;
   overflow-y: auto;
@@ -98,7 +91,6 @@ nav {
   margin-bottom: 10px;
   font-size: 14px;
   color: #6e6e73;
-  
 }
 
 .dropdown-content .column ul {
@@ -123,7 +115,3 @@ nav {
 .dropdown-content .column a:hover {
   color: #007aff;
 }
-
-
-
-
