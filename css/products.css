@@ -1,142 +1,144 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 375px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-  }
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
 
-  .hero-text, .hero-image {
-    flex: 1 1 400px;
-    max-width: 600px;
-  }
-  .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
+.hero-text,
+.hero-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-  .hero-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .hero-text p {
-    font-size: 1.1rem;
-    color: #555;
-  }
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
 
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .specs-line {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1.5rem 2rem;
-  }
+.specs-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+}
 
-  .spec-item {
-    font-weight: bold;
-    color: #444;
-  }
-  .highlight-section2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
-  }
+.spec-item {
+  font-weight: bold;
+  color: #444;
+}
+.highlight-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
 
-  .highlight-image, .highlight-text {
-    flex: 1 1 400px;
-    max-width: 600px;
-  }
+.highlight-image,
+.highlight-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
 
-  .highlight-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.highlight-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .highlight-text p {
-    font-size: 1rem;
-    color: #555;
-  }
+.highlight-text p {
+  font-size: 1rem;
+  color: #555;
+}
 
-  .highlight-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.highlight-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
-  }
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
 
-  .feature-tile {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 1.5rem;
-    max-width: 250px;
-    flex: 1 1 220px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.feature-tile {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 250px;
+  flex: 1 1 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .feature-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-  }
+.feature-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
 
-  .feature-tile h3 {
-    margin-top: 0;
-    color: #111;
-  }
+.feature-tile h3 {
+  margin-top: 0;
+  color: #111;
+}
 
-  .feature-tile p {
-    color: #555;
-  }
+.feature-tile p {
+  color: #555;
+}
 
-  .highlight-section {
-    padding: 2rem;
-    background-color: #f0f0f0;
-    text-align: center;
-  }
+.highlight-section {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
 
-  .highlight-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.highlight-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .highlight-section p {
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #555;
-  }
+.highlight-section p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
 
-  footer {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    font-size: 0.9rem;
-  }
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
