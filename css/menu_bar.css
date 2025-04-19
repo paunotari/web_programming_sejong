@@ -53,7 +53,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 110%;
+  top: 100%;
   left: 70%;
   transform: translateX(-50%);
   width: 102vw;
@@ -73,7 +73,8 @@ nav {
   z-index: 999;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, 
+.dropdown-content:hover {
   display: flex;
   opacity: 1;
   pointer-events: auto;
