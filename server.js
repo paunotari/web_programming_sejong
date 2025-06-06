@@ -34,3 +34,19 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
+
+app.get('/force-error', (req, res) => {
+  throw new Error('Intentional crash!');
+});
+
+// Global error handler middleware
+app.use((err, req, res, next) => {
+  console.error('Unexpected error:', err.stack);
+  res.status(500).send(`
+    <h1>500 – Server Error</h1>
+    <p>Something went wrong. Please try again later.</p>
+    <a href="/">Return to Home</a>
+  `);
+});
