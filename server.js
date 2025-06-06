@@ -14,12 +14,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'home.html'));
 });
 
-app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about_us.html'));
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname, 'home.html'));
 });
 
-app.get('/products', (req, res) => {
-  res.sendFile(path.join(__dirname, 'products.html'));
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'about_us.html'));
 });
 
 app.get('/contact', (req, res) => {
