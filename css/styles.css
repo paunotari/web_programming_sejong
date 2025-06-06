@@ -79,7 +79,9 @@ nav {
   gap: 40px;
   justify-content: space-between;
   opacity: 0;
+
   pointer-events: none;
+  
   transition: opacity 0.3s ease-in-out;
   z-index: 999;
 }
@@ -132,4 +134,35 @@ footer {
   font-size: 14px;
   background-color: #f5f5f7;
   color: #6e6e73;
+}
+
+
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0071e3;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.3);
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 40px 0; /* top and bottom spacing */
 }

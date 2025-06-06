@@ -23,6 +23,18 @@
   border-radius: 8px;
 }
 
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 25s;
+  }
+}
+
+
+
 /* This is the loop animation */
 @keyframes scroll-left {
   0% {
