@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – GadgetCatalog</title>
+  <link rel="icon" href="/images/home_images/favicon-16x16.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/products.css" />
+</head>
+<body>
+  <%- include('partials/header') %>
+
+
+
+    <section class="product-section">
+      <div id="productList" class="product-card-container">
+        <% if (products && products.length) { %>
+          <% products.forEach(function(p) { %>
+            <div class="card">
+              <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" />
+              <h3><%= p.name %></h3>
+              <p><%= p.category %></p>
+              <a href="/products/<%= p.slug %>" class="view-button">View Details</a>
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>No products found.</p>
+        <% } %>
+      </div>
+    </section>
+  </div>
+
+  <%- include('partials/footer') %>
+  <script src="/javascript/products.js"></script>
+</body>
+</html>

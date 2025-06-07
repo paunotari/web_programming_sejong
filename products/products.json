@@ -1,7 +1,8 @@
 [
   {
     "name": "Audeze Maxwell Wireless",
-    "category": "Headphones",
+    "slug": "audeze-maxwell-wireless",
+    "category": "headphones",
     "image": "/images/product_images/headphones/Audeze Maxwell Wireless/new.jpg",
     "highlightImage": "/images/product_images/headphones/Audeze Maxwell Wireless/detailed.webp",
     "description": "Premium wireless gaming headset with planar magnetic drivers, studio-quality sound, and ultra-low latency wireless performance. Experience immersive audio with Dolby Atmos and advanced noise filtering for crystal-clear communication. Built for durability and comfort, the Maxwell Wireless is perfect for marathon gaming sessions.",
@@ -17,7 +18,8 @@
   },
   {
     "name": "HyperX Cloud 2",
-    "category": "Headphones",
+    "slug": "hyperx-cloud-2",
+    "category": "headphones",
     "image": "/images/product_images/headphones/hyperx cloud2/cloud2_1.webp",
     "highlightImage": "/images/product_images/headphones/hyperx cloud2/cloud2.webp",
     "description": "Legendary comfort and sound for gamers. The HyperX Cloud 2 features signature memory foam, premium leatherette, and immersive 7.1 surround sound for an exceptional gaming experience. Its durable aluminum frame and detachable noise-cancelling mic make it a versatile choice for any platform.",
@@ -33,7 +35,8 @@
   },
   {
     "name": "Logitech G733",
-    "category": "Headphones",
+    "slug": "logitech-g733",
+    "category": "headphones",
     "image": "/images/product_images/headphones/g733/g733.webp",
     "highlightImage": "/images/product_images/headphones/g733/g733-black.webp",
     "description": "Wireless RGB gaming headset with LIGHTSPEED technology. The Logitech G733 offers customizable RGB lighting, lightweight comfort, and up to 29 hours of battery life. Enjoy crystal-clear voice with Blue VO!CE mic technology and freedom to move with LIGHTSPEED wireless.",
@@ -49,7 +52,8 @@
   },
   {
     "name": "BenQ Zowie XL2411K",
-    "category": "Monitors",
+    "slug": "benq-zowie-xl2411k",
+    "category": "monitors",
     "image": "/images/home_images/benq_monitor.png",
     "highlightImage": "/images/product_images/monitor_images/benq/back.webp",
     "description": "144Hz esports gaming monitor for smooth gameplay. Designed for competitive gamers, the XL2411K offers fast response times and customizable visual settings. Its ergonomic stand and multiple connectivity options make it a versatile choice for any setup.",
@@ -65,7 +69,8 @@
   },
   {
     "name": "Alienware 3225QF",
-    "category": "Monitors",
+    "slug": "alienware-3225qf",
+    "category": "monitors",
     "image": "/images/product_images/monitor_images/Alienware 32 4K/vision.webp",
     "highlightImage": "/images/product_images/monitor_images/Alienware 32 4K/second.webp",
     "description": "High-end QD-OLED gaming monitor with stunning visuals. The Alienware 3225QF delivers ultra-fast refresh rates and deep blacks for immersive gameplay. Its InfinityEdge design and advanced connectivity make it a centerpiece for any gaming station.",
@@ -81,7 +86,8 @@
   },
   {
     "name": "Xiaomi Curved Gaming",
-    "category": "Monitors",
+    "slug": "xiaomi-curved-gaming",
+    "category": "monitors",
     "image": "/images/product_images/monitor_images//xiaomi/xiaomi1.png",
     "highlightImage": "/images/product_images/monitor_images/xiaomi/xiaomi2.png",
     "description": "Ultra-wide curved gaming monitor for immersive experience. The Xiaomi Curved Gaming monitor features a 34-inch display with a 21:9 aspect ratio for panoramic views. Enjoy smooth gameplay with 144Hz refresh and AMD FreeSync support.",
@@ -97,7 +103,8 @@
   },
   {
     "name": "NexiGo N60",
-    "category": "Webcams",
+    "slug": "nexigo-n60",
+    "category": "webcams",
     "image": "/images/product_images/webcams_images//nexiGo N60/nexigo1.jpg",
     "highlightImage": "/images/product_images/webcams_images/nexiGo N60/nexigo2.avif",
     "description": "1080p business webcam with built-in microphone. The NexiGo N60 offers a wide-angle lens and noise-cancelling mic for clear video calls and presentations. Its plug & play design and privacy cover make it ideal for both home and office use.",
@@ -113,7 +120,8 @@
   },
   {
     "name": "Logitech Brio 100",
-    "category": "Webcams",
+    "slug": "logitech-brio-100",
+    "category": "webcams",
     "image": "/images/product_images/webcams_images/Logitech Brio 100/brio1.jpg",
     "highlightImage": "/images/product_images/webcams_images/Logitech Brio 100/Logitech Brio 100_2.png",
     "description": "Full HD webcam with auto-light correction. The Logitech Brio 100 delivers crisp video and clear audio for streaming, meetings, and online classes. Its privacy shutter and universal mount ensure security and flexibility wherever you work.",
@@ -129,7 +137,8 @@
   },
   {
     "name": "EMEET SmartCam C960",
-    "category": "Webcams",
+    "slug": "emeet-smartcam-c960",
+    "category": "webcams",
     "image": "/images/product_images/webcams_images/emeet C960/emeet1.jpg",
     "highlightImage": "/images/product_images/webcams_images/emeet C960/Emeet C960_2.avif",
     "description": "Affordable 1080p webcam for meetings and streaming. The EMEET C960 features dual microphones and wide compatibility for seamless video calls. Its flexible mount and noise reduction make it a reliable choice for any workspace.",
@@ -145,7 +154,8 @@
   },
   {
     "name": "Logitech G PRO X Superlight 2",
-    "category": "Mice",
+    "slug": "logitech-g-pro-x-superlight-2",
+    "category": "mice",
     "image": "/images/home_images/logitech_mouse.png",
     "highlightImage": "/images/product_images/mice_images/Logitech-G-Pro-X-Superlight/gpro1.jpg",
     "description": "Ultra-lightweight wireless gaming mouse for esports pros. The Superlight 2 features a HERO 2 sensor for pro-grade accuracy and zero-additive PTFE feet for smooth gliding. With five programmable buttons and a long-lasting rechargeable battery, it's built for competitive play.",
@@ -161,7 +171,8 @@
   },
   {
     "name": "Logitech MX Master 3S",
-    "category": "Mice",
+    "slug": "logitech-mx-master-3s",
+    "category": "mice",
     "image": "/images/product_images/mice_images/logitech MX Master/master1.png",
     "highlightImage": "/images/product_images/mice_images/logitech MX Master/master2.png",
     "description": "Advanced wireless mouse for productivity and comfort. The MX Master 3S features an ergonomic design, MagSpeed scroll wheel, and multi-device control for seamless workflow. Its quiet clicks and USB-C quick charge make it ideal for professionals and creators.",
@@ -177,7 +188,8 @@
   },
   {
     "name": "Razer Cobra Pro",
-    "category": "Mice",
+    "slug": "razer-cobra-pro",
+    "category": "mice",
     "image": "/images/product_images/mice_images/razer/razer1.png",
     "highlightImage": "/images/product_images/mice_images/razer/razer2.png",
     "description": "Customizable wireless gaming mouse with Chroma RGB. The Cobra Pro offers 11-zone RGB lighting, customizable buttons, and a Focus Pro 30K sensor for precise tracking. Its lightweight design and dual wireless modes provide flexibility for any gamer.",
@@ -193,7 +205,8 @@
   },
   {
     "name": "JBL Flip 6",
-    "category": "Speakers",
+    "slug": "jbl-flip-6",
+    "category": "speakers",
     "image": "/images/product_images/speaker_images/JBL-flip-6/nb.webp",
     "highlightImage": "/images/product_images/speaker_images/JBL-flip-6/use instead.webp",
     "description": "Portable waterproof Bluetooth speaker with powerful sound. The Flip 6 features a racetrack-shaped driver for deep bass, 12 hours of playtime, and IP67 waterproof rating. Its bold design and PartyBoost compatibility make it perfect for any adventure.",
@@ -209,7 +222,8 @@
   },
   {
     "name": "Pioneer DJ DM-50D",
-    "category": "Speakers",
+    "slug": "pioneer-dj-dm-50d",
+    "category": "speakers",
     "image": "/images/product_images/speaker_images/Pioneer DJ DM-50D-BT/81lHGz1PL-L._AC_SX679_.jpg",
     "highlightImage": "/images/product_images/speaker_images/Pioneer DJ DM-50D-BT/back.jpg",
     "description": "Desktop monitor speakers for DJs and producers. The DM-50D features a 5-inch woofer, front-facing bass port, and 2-way sound mode for versatile audio. Multiple input options and grooved ducts ensure clear, punchy sound for any setup.",
@@ -225,7 +239,8 @@
   },
   {
     "name": "Creative Pebble Pro",
-    "category": "Speakers",
+    "slug": "creative-pebble-pro",
+    "category": "speakers",
     "image": "/images/product_images/speaker_images/creative-pebble-pro/Creative Pebble Pro white.jpg",
     "highlightImage": "/images/product_images/speaker_images/creative-pebble-pro/creative pebble pro speakers_1.jpg",
     "description": "Compact desktop speakers with clear, powerful audio. The Pebble Pro features BassFlex technology, customizable RGB lighting, and multiple connectivity options. Its modern design and elevated drivers deliver immersive sound for any workspace.",
@@ -241,7 +256,8 @@
   },
   {
     "name": "Blue Yeti",
-    "category": "Microphones",
+    "slug": "blue-yeti",
+    "category": "microphones",
     "image": "/images/home_images/blue_yeti.png",
     "highlightImage": "/images/product_images/microphone_images/blueyeti/blue.jpg",
     "description": "Professional USB microphone for streaming and recording.",
@@ -257,7 +273,8 @@
   },
   {
     "name": "Shure MV7i",
-    "category": "Microphones",
+    "slug": "shure-mv7i",
+    "category": "microphones",
     "image": "/images/product_images/microphone_images/Shure MV7i/main.avif",
     "highlightImage": "/images/product_images/microphone_images/Shure MV7i/back.avif",
     "description": "Hybrid USB/XLR dynamic microphone for podcasters and streamers.",
@@ -273,7 +290,8 @@
   },
   {
     "name": "Aula F75",
-    "category": "Keyboards",
+    "slug": "aula-f75",
+    "category": "keyboards",
     "image": "/images/home_images/aulaf75.webp",
     "highlightImage": "/images/product_images/keyboard_images/aulaf75/aulaf752.png",
     "description": "Compact 75% mechanical keyboard designed for both gaming and productivity. The Aula F75 features hot-swappable switches, vibrant customizable RGB lighting, and a sturdy aluminum frame. Enjoy wireless and wired connectivity options, making it perfect for any workspace or gaming setup.",
@@ -289,7 +307,8 @@
   },
   {
     "name": "Keychron K8 Pro",
-    "category": "Keyboards",
+    "slug": "keychron-k8-pro",
+    "category": "keyboards",
     "image": "/images/product_images/keyboard_images/keychron/k8pro-pbt-jis2.webp",
     "highlightImage": "/images/product_images/keyboard_images/keychron/Keychron-K8-Pro-2.jpg",
     "description": "Versatile wireless mechanical keyboard with QMK/VIA support for advanced customization. The Keychron K8 Pro offers a tenkeyless layout, hot-swappable keys, and compatibility with both Mac and Windows. Its robust aluminum frame and vibrant RGB lighting make it a favorite for enthusiasts and professionals alike.",
@@ -305,7 +324,8 @@
   },
   {
     "name": "Razer Wolverine V2 Pro",
-    "category": "PC Controllers",
+    "slug": "razer-wolverine-v2-pro",
+    "category": "pc controllers",
     "image": "/images/product_images/controller_images/razer_wolverine_images/wolverine1.png",
     "highlightImage": "/images/product_images/controller_images/razer_wolverine_images/wolverine2.png",
     "description": "Pro-grade wireless controller engineered for competitive gaming on PlayStation and PC. The Razer Wolverine V2 Pro features ultra-responsive Mecha-Tactile buttons, HyperTrigger technology for rapid-fire action, and six remappable buttons for personalized control. Enjoy ergonomic comfort and Razer Chroma RGB lighting for immersive play.",
@@ -321,7 +341,8 @@
   },
   {
     "name": "GameSir Cyclone 2",
-    "category": "PC Controllers",
+    "slug": "gamesir-cyclone-2",
+    "category": "pc controllers",
     "image": "/images/product_images/controller_images/gamesir_cyclone/gamesir.webp",
     "highlightImage": "/images/product_images/controller_images/gamesir_cyclone/gamesir2.webp",
     "description": "Multi-platform wireless controller with advanced Hall Effect sticks for precise, drift-free control. The GameSir Cyclone 2 offers vibration feedback, macro support, and a long-lasting battery, making it ideal for extended gaming sessions on PC, Switch, Android, and more.",
@@ -337,7 +358,8 @@
   },
   {
     "name": "Wacom CTL472",
-    "category": "Graphics Tablets",
+    "slug": "wacom-ctl472",
+    "category": "graphics tablets",
     "image": "/images/product_images/graphic_tablet_images/Wacom/wacomctl.webp",
     "highlightImage": "/images/product_images/graphic_tablet_images/Wacom/wacom2.webp",
     "description": "Entry-level pen tablet perfect for digital drawing, note-taking, and photo editing. The Wacom CTL472 features a battery-free pen with 2048 pressure levels, a compact and lightweight design, and plug & play compatibility with Windows and Mac. Ideal for students, artists, and creators on the go.",
@@ -353,7 +375,8 @@
   },
   {
     "name": "HUION Kamvas Pro 27",
-    "category": "Graphics Tablets",
+    "slug": "huion-kamvas-pro-27",
+    "category": "graphics tablets",
     "image": "/images/product_images/graphic_tablet_images/HUION/huion2.png",
     "highlightImage": "/images/product_images/graphic_tablet_images/HUION/huion1.png",
     "description": "Professional-grade pen display with a stunning 27-inch 4K screen and full lamination for lifelike drawing. The HUION Kamvas Pro 27 offers 8192 pressure levels, 120% sRGB color coverage, and an adjustable stand for comfortable, precise creative work. Perfect for artists, designers, and illustrators seeking top-tier performance.",
@@ -369,7 +392,8 @@
   },
   {
     "name": "Synology DS923",
-    "category": "Storage",
+    "slug": "synology-ds923",
+    "category": "storage",
     "image": "/images/product_images/storage/Synology DiskStation DS923/heading.png",
     "highlightImage": "/images/product_images/storage/Synology DiskStation DS923/bck.webp",
     "description": "Powerful 4-bay NAS designed for home and small business users who need robust, scalable storage. The Synology DS923 features an AMD Ryzen CPU, expandable RAM, and support for Btrfs file system, M.2 NVMe cache, and virtual machines. Enjoy secure file sharing, backup, and media streaming with advanced connectivity options.",
@@ -385,7 +409,8 @@
   },
   {
     "name": "Toshiba Canvio Advanced",
-    "category": "Storage",
+    "slug": "toshiba-canvio-advanced",
+    "category": "storage",
     "image": "/images/product_images/storage/toshiba/toshiba1.png",
     "highlightImage": "/images/product_images/storage/toshiba/toshiba2.jpg",
     "description": "Portable external hard drive offering reliable backup and ample storage for all your files. The Toshiba Canvio Advanced features USB 3.0 connectivity, up to 4TB capacity, and a compact, lightweight design. Enjoy peace of mind with automatic backup software and password protection for your data.",
@@ -401,7 +426,8 @@
   },
   {
     "name": "TP-Link Archer T3U",
-    "category": "Networks",
+    "slug": "tp-link-archer-t3u",
+    "category": "networks",
     "image": "/images/product_images/network_images/archer-t3u/Archer T3U Plus_1.jpg",
     "highlightImage": "/images/product_images/network_images/archer-t3u/Archer T3U Plus_2.jpg",
     "description": "Dual-band USB Wi-Fi adapter delivering fast, stable wireless connectivity for desktops and laptops. The TP-Link Archer T3U supports AC1300 speeds, USB 3.0, and both 2.4GHz and 5GHz bands. Enjoy MU-MIMO technology, compact design, and broad compatibility with Windows and Mac systems.",
@@ -417,7 +443,8 @@
   },
   {
     "name": "Asus USB-AC53",
-    "category": "Networks",
+    "slug": "asus-usb-ac53",
+    "category": "networks",
     "image": "/images/product_images/network_images/Asus USB-AC53 Nano/raw.jpeg",
     "highlightImage": "/images/product_images/network_images/Asus USB-AC53 Nano/box.jpg",
     "description": "Ultra-compact USB Wi-Fi adapter with dual-band support for fast, reliable wireless connections. The Asus USB-AC53 features AC1200 speeds, a detachable antenna for improved signal, and easy setup with included software. Perfect for travel and on-the-go connectivity.",
@@ -433,7 +460,8 @@
   },
   {
     "name": "DbillionDa Cat8 Ethernet",
-    "category": "Cables",
+    "slug": "dbillionda-cat8-ethernet",
+    "category": "cables",
     "image": "/images/product_images/cable_images/dbillionda/DbillionDa Cat8_1.jpg",
     "highlightImage": "/images/product_images/cable_images/dbillionda/DbillionDa Cat8 Ethernet Cable_2.jpg",
     "description": "Heavy-duty Cat8 Ethernet cable engineered for high-speed, reliable networking in demanding environments. The DbillionDa Cat8 supports up to 2000 MHz bandwidth and 40Gbps transfer rates, with double-shielded construction for durability indoors and out. Compatible with all RJ45 devices and made from sustainable materials.",
@@ -449,7 +477,8 @@
   },
   {
     "name": "Nothing Cable USB-C-C",
-    "category": "Cables",
+    "slug": "nothing-cable-usb-c-c",
+    "category": "cables",
     "image": "/images/product_images/cable_images/nothing/nothing2-noBG.png",
     "highlightImage": "/images/product_images/cable_images/nothing/nothing1-removebg.png",
     "description": "Transparent USB-C to USB-C cable combining minimalist design with high performance. The Nothing Cable supports fast charging up to 240W PD, 10Gbps data transfer, and features a durable braided construction. Its signature transparent look and universal compatibility make it a stylish and practical accessory for all your USB-C devices.",

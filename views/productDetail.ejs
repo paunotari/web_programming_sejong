@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= product.name %> – GadgetCatalog</title>
+  <link rel="icon" href="/images/home_images/favicon-16x16.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/products.css" />
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><%= product.name %></h1>
+      <p class="category"><%= product.category.charAt(0).toUpperCase() + product.category.slice(1) %></p>
+      <p class="description"><%= product.description %></p>
+    </div>
+    <div class="hero-image">
+      <img src="<%= product.image %>" alt="<%= product.name %>" loading="lazy" />
+    </div>
+  </section>
+
+  <% if (product.specs && product.specs.length) { %>
+  <section class="specs-line">
+    <% product.specs.forEach(spec => { %>
+      <span class="spec-item"><%= spec %></span>
+    <% }) %>
+  </section>
+  <% } %>
+
+  <% if (product.highlightImage) { %>
+  <section class="highlight-section2">
+    <div class="highlight-image">
+      <img src="<%= product.highlightImage %>" alt="Highlight of <%= product.name %>" loading="lazy" />
+    </div>
+    <div class="highlight-text">
+      <% if (product.featuresTitle) { %><h2><%= product.featuresTitle %></h2><% } %>
+      <% if (product.featuresDesc) { %><p><%= product.featuresDesc %></p><% } %>
+    </div>
+  </section>
+  <% } %>
+
+  <% if (product.details && product.details.length) { %>
+  <section class="features">
+    <% product.details.forEach(detail => { %>
+      <div class="feature-tile">
+        <h3><%= detail.title %></h3>
+        <p><%= detail.desc %></p>
+      </div>
+    <% }) %>
+  </section>
+  <% } %>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
