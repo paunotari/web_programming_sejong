@@ -1,0 +1,25 @@
+{
+    "cSpell.words": [
+        "Alienware",
+        "Asus",
+        "Audeze",
+        "Aula",
+        "AULA",
+        "Canvio",
+        "Dbillion",
+        "EMEET",
+        "HUION",
+        "Kamvas",
+        "Keychron",
+        "Nexi",
+        "Superlight"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:web_programming_sejong}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
+}
