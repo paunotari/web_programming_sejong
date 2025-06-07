@@ -16,7 +16,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'home.html'));
+  res.render('home');
 });
 
 //  Fixed: Load and pass product data to products.ejs
@@ -128,9 +128,6 @@ app.get('/api/products', (req, res) => {
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, '404.html'));
 });
-
-// Serve static HTML files from the root directory
-app.use(express.static(__dirname, { extensions: ['html'] }));
 
 // Intentional crash test
 app.get('/force-error', (req, res) => {

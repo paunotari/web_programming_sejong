@@ -67,5 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 4) Event listeners for search and category changes
-document.getElementById('searchInput').addEventListener('input', () => debouncedFetch(300));
-document.getElementById('categorySelect').addEventListener('change', fetchProducts);
+const searchInput = document.getElementById('searchInput');
+const categorySelect = document.getElementById('categorySelect');
+const searchForm = document.getElementById('productSearchForm');
+
+if (searchInput) searchInput.addEventListener('input', () => debouncedFetch(300));
+if (categorySelect) categorySelect.addEventListener('change', fetchProducts);
+if (searchForm) {
+  searchForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Redirect to /products?search=...&category=...
+    const params = new URLSearchParams();
+    if (searchInput.value.trim()) params.append('search', searchInput.value.trim());
+    if (categorySelect.value) params.append('category', categorySelect.value);
+    window.location.href = '/products' + (params.toString() ? ('?' + params.toString()) : '');
+  });
+}

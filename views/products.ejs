@@ -11,27 +11,45 @@
 </head>
 <body>
   <%- include('partials/header') %>
+  <main>
+  <form id="productSearchForm" style="display:flex;gap:10px;margin-bottom:2rem;justify-content:center;align-items:center;">
+    <input type="text" id="searchInput" name="search" placeholder="Search products..." style="padding:8px 12px;font-size:1rem;border-radius:6px;border:1px solid #ccc;min-width:200px;" />
+    <select id="categorySelect" name="category" style="padding:8px 12px;font-size:1rem;border-radius:6px;border:1px solid #ccc;">
+      <option value="">All Categories</option>
+      <option value="headphones">Headphones</option>
+      <option value="monitors">Monitors</option>
+      <option value="webcams">Webcams</option>
+      <option value="mice">Mice</option>
+      <option value="speakers">Speakers</option>
+      <option value="microphones">Microphones</option>
+      <option value="keyboards">Keyboards</option>
+      <option value="pc controllers">PC Controllers</option>
+      <option value="graphics tablets">Graphics Tablets</option>
+      <option value="storage">Storage</option>
+      <option value="networks">Networks</option>
+      <option value="cables">Cables</option>
+    </select>
+    <button type="submit" style="padding:8px 18px;font-size:1rem;border-radius:6px;background:#007aff;color:#fff;border:none;font-weight:600;cursor:pointer;">Search</button>
+  </form>
 
-
-
-    <section class="product-section">
-      <div id="productList" class="product-card-container">
-        <% if (products && products.length) { %>
-          <% products.forEach(function(p) { %>
-            <div class="card">
-              <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" />
-              <h3><%= p.name %></h3>
-              <p><%= p.category %></p>
-              <a href="/products/<%= p.slug %>" class="view-button">View Details</a>
-            </div>
-          <% }) %>
-        <% } else { %>
-          <p>No products found.</p>
-        <% } %>
-      </div>
-    </section>
+  <section class="product-section">
+    <div id="productList" class="product-card-container">
+      <% if (products && products.length) { %>
+        <% products.forEach(function(p) { %>
+          <div class="card">
+            <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy" />
+            <h3><%= p.name %></h3>
+            <p><%= p.category %></p>
+            <a href="/products/<%= p.slug %>" class="view-button">View Details</a>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>No products found.</p>
+      <% } %>
+    </div>
+  </section>
   </div>
-
+  </main>
   <%- include('partials/footer') %>
   <script src="/javascript/products.js"></script>
 </body>

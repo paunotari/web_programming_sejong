@@ -22,47 +22,49 @@
   </head>
   <body>
     <%- include('partials/header') %>
-    <section class="contact-section">
-      <div id="intro">
-        <h1>Contact us</h1>
-        <p>If you have any question, comment or need more information about us, our products or our services, get in contact with us.</p>
-      </div>
-      <div class="tabs_buttons">
-        <button class="tab-button active" onclick="showTab('contact_info')">Contact information</button>
-        <button class="tab-button" onclick="showTab('contact_form')">Send a message</button>
-        <button class="tab-button" onclick="showTab('contact_FAQ')">FAQ</button>
-      </div>
-      <div class="tabs">
-        <div class="tab" id="contact_info">
-          <div><i class="fas fa-map-marker-alt"></i> <p>Seoul, South Korea</p></div>
-          <div><i class="fas fa-envelope"></i><p> someone123@gmail.com</p></div>
-          <div><i class="fas fa-phone"></i><p> +010 817-XXXX</p></div>
+    <main>
+      <section class="contact-section">
+        <div id="intro">
+          <h1>Contact us</h1>
+          <p>If you have any question, comment or need more information about us, our products or our services, get in contact with us.</p>
         </div>
-        <div class="tab" id="contact_form" style="display:none;">
-          <p>If you have any concern, feel free to send a message!</p>
-          <br>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+        <div class="tabs_buttons">
+          <button class="tab-button active" onclick="showTab('contact_info')">Contact information</button>
+          <button class="tab-button" onclick="showTab('contact_form')">Send a message</button>
+          <button class="tab-button" onclick="showTab('contact_FAQ')">FAQ</button>
         </div>
-        <div class="tab" id="contact_FAQ" style="display:none;">
-          <p class="question">Can I buy the products in the web?</p>
-          <p class="answer">We don't sell the products directly through this website. This is just the catalog. If you are interested in buying, contact us</p>
-          <p class="question">What's the price of the products?</p>
-          <p class="answer">Depending on the client's situation we will calculate a personalized price. Our partner donations, governmental aids, the stock and others affect the final price.</p>
-          <p class="question">Does the catalog always have the same products?</p>
-          <p class="answer">No, it doesn't. From time to time we remove and add products. We also conider including products requested by clients.</p>
+        <div class="tabs">
+          <div class="tab" id="contact_info">
+            <div><i class="fas fa-map-marker-alt"></i> <p>Seoul, South Korea</p></div>
+            <div><i class="fas fa-envelope"></i><p> someone123@gmail.com</p></div>
+            <div><i class="fas fa-phone"></i><p> +010 817-XXXX</p></div>
+          </div>
+          <div class="tab" id="contact_form" style="display:none;">
+            <p>If you have any concern, feel free to send a message!</p>
+            <br>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="tab" id="contact_FAQ" style="display:none;">
+            <p class="question">Can I buy the products in the web?</p>
+            <p class="answer">We don't sell the products directly through this website. This is just the catalog. If you are interested in buying, contact us</p>
+            <p class="question">What's the price of the products?</p>
+            <p class="answer">Depending on the client's situation we will calculate a personalized price. Our partner donations, governmental aids, the stock and others affect the final price.</p>
+            <p class="question">Does the catalog always have the same products?</p>
+            <p class="answer">No, it doesn't. From time to time we remove and add products. We also conider including products requested by clients.</p>
+          </div>
         </div>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-    </section>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+    </main>
     <%- include('partials/footer') %>
     <script>
       function showTab(tabId) {

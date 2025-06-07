@@ -15,6 +15,21 @@ body {
   flex-direction: column;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  background-color: #f5f5f7;
+  color: #6e6e73;
+}
+
+
+
 header {
   background-color: #fff;
 
@@ -156,16 +171,6 @@ nav {
 .dropdown-content .column a:hover {
   color: #007aff;
 }
-footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
-  background-color: #f5f5f7;
-  color: #6e6e73;
-  flex-shrink: 0;
-}
-
-
 
 .btn-primary {
   display: inline-block;
@@ -313,7 +318,4 @@ footer {
     width: 100%;
     min-width: 0;
   }
-}
-main, .contact-section {
-  flex: 1 0 auto;
 }
