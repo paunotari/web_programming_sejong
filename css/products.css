@@ -116,29 +116,3 @@ body {
 .feature-tile p {
   color: #555;
 }
-
-.highlight-section {
-  padding: 2rem;
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-.highlight-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.highlight-section p {
-  font-size: 1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #555;
-}
-
-footer {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-}
