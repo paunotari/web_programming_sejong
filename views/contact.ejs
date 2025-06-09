@@ -26,7 +26,7 @@
       <section class="contact-section">
         <div id="intro">
           <h1>Contact us</h1>
-          <p>If you have any question, comment or need more information about us, our products or our services, get in contact with us.</p>
+          <p>If you have any questions, comment or need more information about us, our products or our services, get in contact with us.</p>
         </div>
         <div class="tabs_buttons">
           <button class="tab-button active" onclick="showTab('contact_info')">Contact information</button>
@@ -43,9 +43,22 @@
             <p>If you have any concern, feel free to send a message!</p>
             <br>
             <form class="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" required></textarea>
+
+              <div class="form-group">
+              <label for="name">Your Name</label>
+              <input id="name" type="text" placeholder="e.g. Mark Smith" required />
+              </div>
+              
+              <div class="form-group">
+              <label for="email">Your Email</label>
+              <input id="email" type="email" placeholder="youremail@mail.com" required />
+              </div>
+
+              <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" placeholder="Type your message here" required></textarea>
+              </div>
+
               <button type="submit">Send</button>
             </form>
           </div>
@@ -55,7 +68,7 @@
             <p class="question">What's the price of the products?</p>
             <p class="answer">Depending on the client's situation we will calculate a personalized price. Our partner donations, governmental aids, the stock and others affect the final price.</p>
             <p class="question">Does the catalog always have the same products?</p>
-            <p class="answer">No, it doesn't. From time to time we remove and add products. We also conider including products requested by clients.</p>
+            <p class="answer">No, it doesn't. From time to time we remove and add products. We also consider including products requested by clients.</p>
           </div>
         </div>
         <div class="social-icons">
@@ -68,13 +81,31 @@
     <%- include('partials/footer') %>
     <script>
       function showTab(tabId) {
-        const contents = document.querySelectorAll('.tab');
+        /*const contents = document.querySelectorAll('.tab');
         contents.forEach(content => content.style.display = 'none');
         const buttons = document.querySelectorAll('.tab-button');
         buttons.forEach(button => button.classList.remove('active'));
         document.getElementById(tabId).style.display='grid';
         const activeButton = Array.from(buttons).find(button => button.getAttribute('onclick').includes(tabId));
+        activeButton.classList.add('active');*/
+
+        document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active-tab');
+        tab.style.display = 'none';
+        });
+
+        document.querySelectorAll('.tab-button').forEach(button =>
+          button.classList.remove('active')
+        );
+
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.style.display = 'grid';
+        setTimeout(() => selectedTab.classList.add('active-tab'), 10);
+
+        const activeButton = Array.from(document.querySelectorAll('.tab-button'))
+          .find(btn => btn.getAttribute('onclick').includes(tabId));
         activeButton.classList.add('active');
+        
       }
     </script>
   </body>

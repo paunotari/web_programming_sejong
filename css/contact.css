@@ -44,6 +44,19 @@ h1{
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.tab.active-tab {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: grid;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -62,8 +75,20 @@ h1{
 
 .contact-form {
   display: grid;
-  align-items: center; /* Centra todos los elementos verticalmente */
+  align-items: center;
   gap: 15px;
+}
+
+.form-group {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+  text-align: left;
 }
 
 .contact-form input,
