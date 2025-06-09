@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 
+//form
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -96,6 +100,42 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
+//form POST and email
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.post('/contact', async (req, res) => {
+  const { name, email, message } = req.body;
+
+  if (!name || !email || !message) { //Checking if all fields were filled
+    return res.status(400).render('contact', { error: 'All fields must be filled.' });
+  }
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: process.env.EMAIL_USER,
+    subject: `${name}, your contact form data`,
+    text: `${name} (${email}) has sent to Gadgetcatalog:\n\n${message}`,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.render('contact', { success: 'Message successfully recieved.' });;
+  } catch (error) {
+    console.error(error);
+    res.status(500).render('contact', { error: 'Error when sending the message.' });
+  }
+});
+
+
 // API endpoint for product search/filter
 app.get('/api/products', (req, res) => {
   fs.readFile(path.join(__dirname, 'products', 'products.json'), 'utf8', (err, data) => {
@@ -147,3 +187,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
