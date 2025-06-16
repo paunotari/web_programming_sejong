@@ -122,7 +122,7 @@ app.post('/contact', async (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
-    subject: `${name}, your contact form data`,
+    subject: `${name} message`,
     text: `${name} (${email}) has sent to Gadgetcatalog:\n\n${message}`,
   };
 
